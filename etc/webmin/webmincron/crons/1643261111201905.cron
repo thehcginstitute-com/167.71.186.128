@@ -1,0 +1,14 @@
+func=run_cron_script
+id=1643261111201905
+interval=
+special=daily
+days=
+arg0=backup.pl
+arg1=--id 1643261110201905
+hours=
+module=virtual-server
+months=
+weekdays=
+active=1
+mins=
+user=root

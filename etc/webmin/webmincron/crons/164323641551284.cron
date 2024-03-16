@@ -1,0 +1,11 @@
+active=1
+mins=4,9,14,19,24,29,34,39,44,49,54,59
+module=virtual-server
+days=*
+weekdays=*
+user=root
+id=164323641551284
+hours=*
+func=run_cron_script
+months=*
+arg0=collectinfo.pl
