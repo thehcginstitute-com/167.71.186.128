@@ -1,2 +1,0 @@
-#!/bin/sh
-/bin/bash /opt/digitalocean/do-agent/scripts/update.sh >/dev/null 2>&1
