@@ -2,6 +2,3 @@
 # (/tmp/crontab.vfG103/crontab installed on Tue Nov 28 16:35:13 2023)
 # (Cron version -- $Id: crontab.c,v 2.13 1994/01/17 03:20:37 vixie Exp $)
 0 3 * * * ~/bin/ecomscan -k Azq9pTTwGvH7Z3rMq --report support+thehcginstitute@magecloud.net,info@thehcginstitute.com /home/thehcg-prod/public_html/
-# 2024-03-17 Dmitrii Fediuk https://upwork.com/fl/mage2pro
-# "Setup Cron for Magento": https://github.com/thehcginstitute-com/167.71.186.128/issues/9
-*/5 * * * *  /bin/sh /home/thehcg-prod/public_html/store/cron.sh
