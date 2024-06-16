@@ -11,7 +11,15 @@ WantedBy=multi-user.target
 ExecStart=/usr/sbin/mysqld
 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre
 Group=mysql
-LimitNOFILE=10000
+# 2024-06-16 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 1.1) "[MySQL] «[Warning] [MY-010140] [Server] Could not increase number of max_open_files to more than 10000 (request: 65535)»":
+# https://github.com/thehcginstitute-com/167.71.186.128/issues/26
+# 1.2) "How did I fix «[Warning] [MY-010140] [Server]
+# Could not increase number of max_open_files to more than 10000 (request: 65535)» for MySQL?": https://df.tips/t/2228
+# 2.1) "How to fix the «Could not increase number of max_open_files to more than 1024» MySQL issue?": https://df.tips/t/220
+# 2.2) https://unix.stackexchange.com/a/157910
+LimitNOFILE=65535
+LimitNPROC=65535
 PIDFile=/run/mysqld/mysqld.pid
 PermissionsStartOnly=true
 Restart=on-failure
