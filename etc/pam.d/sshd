@@ -7,7 +7,11 @@ session    optional     pam_keyinit.so force revoke
 @include common-session
 session    optional     pam_motd.so  motd=/run/motd.dynamic
 session    optional     pam_motd.so noupdate
-session    optional     pam_mail.so standard noenv # [1]
+# 2024-08-24 Dmitrii Fediuk https://upwork.com/fl/mage2pro
+# 1.1) "Hide «No mail» on an Ubuntu login": https://github.com/thehcginstitute-com/167.71.186.128/issues/49
+# 1.2) "How did I hide «No mail» on an Ubuntu login?": https://df.tips/t/2335
+# 2) https://askubuntu.com/a/318968
+session    optional     pam_mail.so quiet noenv # [1]
 session    required     pam_limits.so
 session    required     pam_env.so # [1]
 session    required     pam_env.so user_readenv=1 envfile=/etc/default/locale
