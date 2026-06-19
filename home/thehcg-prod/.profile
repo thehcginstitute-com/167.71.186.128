@@ -17,8 +17,10 @@ export LS_OPTIONS='--color=auto -h'
 export TERM=xterm-256color
 # 2023-10-19
 # 1) «cannot create user data directory: failed to verify SELinux context of /root/snap:
-# exec: "matchpathcon": executable file not found in $PATH»: https://github.com/dmitrii-fediuk/5.9.188.84/issues/54
+# exec: "matchpathcon": executable file not found in $PATH»:
+# https://github.com/dmitrii-fediuk/5.9.188.84/issues/54
 # 2) "How did I solve «cannot create user data directory: failed to verify SELinux context of /root/snap:
-# exec: "matchpathcon": executable file not found in $PATH» for Certbot / Let's Encrypt?": https://df.tips/t/2033
+# exec: "matchpathcon": executable file not found in $PATH» for Certbot / Let's Encrypt?":
+# https://df.tips/t/2033
 # 3) https://forum.snapcraft.io/t/21487/3
 export PATH="$PATH:/usr/sbin"
